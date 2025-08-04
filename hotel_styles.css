@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-image: url('hotel_gallary/background.png');
+    background-size: cover;
+}
+
+header{
+    /*border: solid black 0.5rem;*/
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    row-gap: 2rem;
+    font-size: 1.5rem;
+    padding: 5px 0 10px 0;
+    color: whitesmoke;
+   /* animation: bounce 3s ease infinite;*/
+}
+
+/*@keyframes bounce{
+    0%{
+       transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+        color: whitesmoke;
+        font-size: larger;
+    }
+    100%{
+        color: blue;
+    }
+}*/
+
+h3{
+    margin: 0.5rem;
+}
+
+img{
+    width: 10rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+
+.nav-container{
+    display: flex;
+    gap: 0 15rem;
+    background-color: rgba(0, 0, 0, 0.495);
+    height: 5rem;
+}
+
+#nav-links{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.links{
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2rem 1.3rem;
+    color: whitesmoke;
+}
+
+.links:hover{
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+.links:active{
+    color: whitesmoke;
+}
+
+#button_2{
+    width: 15rem;
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    border: whitesmoke solid 0.2rem;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    left: 15rem;
+    transition-duration: 0.5s;
+    animation: bounce 3s ease infinite;
+}
+
+#button_1{
+    width: 15rem;
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    border: whitesmoke solid 0.2rem;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: transparent;
+    position: absolute;
+    bottom: 7.5rem;
+    right: 15rem;
+    transition-duration: 0.5s;
+    animation: bounce 3s ease infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+       transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+}
+
+
+#button_1:hover{
+    border: solid blue 0.2rem;
+    color: blue;
+    cursor: pointer;
+    /*box-shadow: 0px 5px 5px 0px black;*/
+}
+
+#button_2:hover{
+    border: solid blue 0.2rem;
+    color: blue;
+    cursor: pointer;
+}

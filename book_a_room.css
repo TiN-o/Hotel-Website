@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('hotel_gallary/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{
+   /* border: solid 0.1rem black;*/
+    width: 80rem;
+    height: 30rem;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    translate: -50%;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+   /* backdrop-filter: visible;
+    backdrop-filter: blur(5px);*/
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    font-weight: bold;
+}
+
+img{
+    width: 3rem;
+    border-radius: 0.5rem;
+}
+
+.headen{
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+h2{
+    margin-left: 1.5rem;
+}
+
+input,select{
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0.1rem;
+}
+
+#reset{
+    margin-left: 10rem;
+    margin-top: 0.5rem;
+    width: 5rem;
+    font-weight: bold;
+}
+
+
+button{
+    margin-top: 2rem;
+    margin-bottom: 1em;
+    padding: 0.7rem 3rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+button:active{
+   text-indent: 15px;
+}
+
+

@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-image: url('hotel_gallary/background.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#logo{
+    width: 10rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+i{
+    color: rgba(255, 255, 0, 0.662);
+}
+
+.nav-container{
+    display: flex;
+    gap: 0 15rem;
+    background-color: rgba(0, 0, 0, 0.265) ;
+    height: 5rem;
+}
+
+#nav-links{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.links{
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2rem 1.3rem;
+    color: whitesmoke;
+}
+
+.links:hover{
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+.links:active{
+    color: whitesmoke;
+}
+
+p{
+  display: flex;
+  justify-content: center;  
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 4rem;
+  font-size: 1.1rem;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.dual_room_image{
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem;
+    gap: 1rem 3rem;
+    margin-left: 6.5rem;
+}
+
+.image{
+    width: 20rem;
+    height: 15rem;
+    border-radius: 3rem;
+}
+
+.image:hover{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.495);
+    cursor: pointer;
+}
+
+button{
+    width: 15rem;
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    border: whitesmoke solid 0.2rem;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    translate: -50% -50%;
+    margin-top: 7rem;
+    background-color: transparent;
+    animation: bounce 3s ease infinite;
+}
+
+@keyframes bounce{
+    0%,100%{
+       transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+}
+
+
+button:hover{
+    border: solid blue 0.2rem;
+    color: blue;
+    cursor: pointer;
+    /*box-shadow: 0px 5px 5px 0px black;*/
+}
+
+#home{
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+    width: 4rem;
+}
